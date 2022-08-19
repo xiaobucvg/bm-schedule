@@ -1,0 +1,75 @@
+{
+  "homeInfo": {
+    "title": "首页",
+    "href": "page/welcome-1.html?t=1"
+  },
+  "logoInfo": {
+    "title": "大猫面板",
+    "image": "images/logo.png",
+    "href": ""
+  },
+  "menuInfo": [
+    {
+      "title": "控制台",
+      "icon": "fa fa-address-book",
+      "href": "",
+      "target": "_self",
+      "child": [
+        {
+          "title": "定时任务",
+          "href": "",
+          "icon": "fa fa-home",
+          "target": "_self"
+        },
+        {
+          "title": "订阅管理",
+          "href": "page/menu.html",
+          "icon": "fa fa-window-maximize",
+          "target": "_self"
+        },
+        {
+          "title": "环境变量",
+          "href": "page/setting.html",
+          "icon": "fa fa-gears",
+          "target": "_self"
+        },
+        {
+          "title": "配置文件",
+          "href": "page/table.html",
+          "icon": "fa fa-file-text",
+          "target": "_self"
+        },
+        {
+          "title": "脚本管理",
+          "href": "",
+          "icon": "fa fa-calendar",
+          "target": "_self"
+        },
+        {
+          "title": "依赖管理",
+          "href": "",
+          "icon": "fa fa-flag-o",
+          "target": "_self"
+        },
+        {
+          "title": "对比工具",
+          "href": "",
+          "icon": "fa fa-home",
+          "target": "_self"
+        },
+        {
+          "title": "任务日志",
+          "href": "",
+          "icon": "fa fa-snowflake-o",
+          "target": "_self"
+        },
+        {
+          "title": "系统设置",
+          "href": "",
+          "icon": "fa fa-snowflake-o",
+          "target": "_self"
+        }
+      ]
+    }
+  ]
+}
