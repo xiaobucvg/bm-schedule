@@ -1,0 +1,43 @@
+.btn-back-none {
+    background-color: unset;
+}
+
+.font-color-black {
+    color: #000000;
+}
+
+.font-color-red {
+    color: #FF5722;
+}
+
+.font-color-origin {
+    color: #FFB800;
+}
+
+.font-color-green {
+    color: #009688;
+}
+
+.font-color-cyan {
+    color: #2F4056;
+}
+
+.font-color-blue {
+    color: #1E9FFF;
+}
+
+.font-color-deep {
+    color: #393D49;
+}
+
+.hover-normal:hover {
+    color: #31BDEC
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.padding-left-10 {
+    padding-left: 10px;
+}

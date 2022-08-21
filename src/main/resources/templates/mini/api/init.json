@@ -1,7 +1,7 @@
 {
   "homeInfo": {
     "title": "首页",
-    "href": "page/welcome-1.html?t=1"
+    "href": "page/welcome-2.html?t=1"
   },
   "logoInfo": {
     "title": "大猫面板",
@@ -17,7 +17,7 @@
       "child": [
         {
           "title": "定时任务",
-          "href": "",
+          "href": "page/task-manager/task-manager.html",
           "icon": "fa fa-home",
           "target": "_self"
         },
@@ -62,11 +62,49 @@
           "href": "",
           "icon": "fa fa-snowflake-o",
           "target": "_self"
+        }
+      ]
+    },
+    {
+      "title": "系统设置",
+      "icon": "fa fa-address-book",
+      "href": "",
+      "target": "_self",
+      "child": [
+        {
+          "title": "安全设置",
+          "href": "page/task-manager/task-manager.html",
+          "icon": "fa fa-home",
+          "target": "_self"
         },
         {
-          "title": "系统设置",
-          "href": "",
-          "icon": "fa fa-snowflake-o",
+          "title": "应用设置",
+          "href": "page/task-manager/task-manager.html",
+          "icon": "fa fa-home",
+          "target": "_self"
+        },
+        {
+          "title": "通知设置",
+          "href": "page/task-manager/task-manager.html",
+          "icon": "fa fa-home",
+          "target": "_self"
+        },
+        {
+          "title": "登录日志  ",
+          "href": "page/task-manager/task-manager.html",
+          "icon": "fa fa-home",
+          "target": "_self"
+        },
+        {
+          "title": "其他设置",
+          "href": "page/task-manager/task-manager.html",
+          "icon": "fa fa-home",
+          "target": "_self"
+        },
+        {
+          "title": "关于",
+          "href": "page/task-manager/task-manager.html",
+          "icon": "fa fa-home",
           "target": "_self"
         }
       ]

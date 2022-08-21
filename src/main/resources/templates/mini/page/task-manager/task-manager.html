@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../lib/layui-v2.6.3/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../css/public.css" media="all">
+    <link rel="stylesheet" href="../../css/customize.css" media="all">
+</head>
+<body>
+<div class="layuimini-container">
+    <div class="layuimini-main">
+
+        <fieldset class="table-search-fieldset">
+            <legend>搜索信息</legend>
+            <div style="margin: 10px 10px 10px 10px">
+                <form class="layui-form layui-form-pane" action="">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <div class="layui-input-inline">
+                                <input type="text" name="username" autocomplete="off" placeholder="输入名称或关键词"  class="layui-input">
+                            </div>
+                            <div class="layui-input-inline">
+                                <button type="submit" class="layui-btn layui-btn-primary" lay-submit
+                                        lay-filter="data-search-btn"><i class="layui-icon">&#xe615;</i></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </fieldset>
+
+        <script type="text/html" id="table_toolbar_timed_task">
+            <div class="layui-btn-container">
+                <button class="layui-btn layui-btn-normal layui-btn-sm" lay-event="delete">新建任务</button>
+                <button class="layui-btn layui-btn-danger layui-btn-sm" lay-event="delete">删除任务</button>
+                <button class="layui-btn layui-btn-normal layui-btn-sm" lay-event="delete">开始任务</button>
+                <button class="layui-btn layui-btn-normal layui-btn-sm" lay-event="delete">停止任务</button>
+            </div>
+        </script>
+
+        <table class="layui-hide" id="table_timed_task" lay-filter="lay-filter-table-timed-task"></table>
+
+        <script type="text/html" id="table_bar_timed_task_status">
+            <!--            <button class="layui-btn layui-btn-xs layui-btn-primary">-->
+            <!--                <i class="layui-icon">&#xe68d;</i>空闲中-->
+            <!--            </button>-->
+            <!--            <button class="layui-btn layui-btn-xs layui-btn-normal">-->
+            <!--                <i class="layui-icon layui-anim layui-anim-rotate layui-anim-loop">&#xe63e;</i>运行中-->
+            <!--            </button>-->
+            <button class="layui-btn layui-btn-xs layui-btn-danger">
+                <i class="layui-icon">&#x1007;</i>已禁用
+            </button>
+        </script>
+
+        <script type="text/html" id="table_bar_timed_task_operation">
+            <div class="layui-btn-group">
+                <button type="button" class="layui-btn layui-btn-sm btn-back-none padding-0" lay-event="start"
+                        title="开始">
+                    <i class="layui-icon font-color-blue hover-normal layui-font-14">&#xe652;</i>
+                </button>
+                <button type="button" class="layui-btn layui-btn-sm btn-back-none padding-0 padding-left-10"
+                        lay-event="log" title="日志">
+                    <i class="layui-icon font-color-blue hover-normal layui-font-14">&#xe63c;</i>
+                </button>
+                <button type="button" class="layui-btn layui-btn-sm btn-back-none padding-0 padding-left-10"
+                        id="btn_more" lay-event="more" title="更多">
+                    <i class="layui-icon font-color-blue hover-normal layui-font-14">&#xe671;</i>
+                </button>
+            </div>
+        </script>
+
+    </div>
+</div>
+<script src="../../lib/layui-v2.6.3/layui.js" charset="utf-8"></script>
+<script src="./task-manager.js" charset="utf-8"></script>
+</body>
+</html>
