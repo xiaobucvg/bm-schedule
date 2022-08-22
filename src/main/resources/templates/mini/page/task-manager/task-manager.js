@@ -36,21 +36,11 @@ layui.use(['form', 'table', 'dropdown'], function () {
 
     // 监听搜索操作
     form.on('submit(data-search-btn)', function (data) {
-        var result = JSON.stringify(data.field);
-        layer.alert(result, {
-            title: '最终的搜索信息'
-        });
-
-        //执行搜索重载
+        let result = JSON.stringify(data.field);
+        // 执行搜索重载
         table.reload('table_timed_task', {
-            page: {
-                curr: 1
-            }
-            , where: {
-                searchParams: result
-            }
-        }, 'data');
 
+        });
         return false;
     });
 
